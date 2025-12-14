@@ -5,7 +5,8 @@ from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.chains import RetrievalQA
 
-# Ensure OPENAI_API_KEY is set
+# Make sure OPENAI_API_KEY is set in your environment
+# export OPENAI_API_KEY="sk-..."
 
 def run_vectorstore_example():
     api_key = os.environ.get("OPENAI_API_KEY")
