@@ -1,10 +1,9 @@
 # examples/vectorstore_faiss.py
 import os
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_openai import OpenAIEmbeddings, OpenAI
+from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.chains import RetrievalQA
-from langchain.llms import OpenAI
 
 # Ensure OPENAI_API_KEY is set
 
